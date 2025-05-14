@@ -25,6 +25,14 @@ export const en = {
     error: 'Error',
     success: 'Success'
   },
+  dashboard: {
+    title: 'Dashboard',
+    totalInvoices: 'Total Invoices',
+    totalOffers: 'Total Offers',
+    totalCustomers: 'Total Customers',
+    recentActivity: 'Recent Activity',
+    noRecentActivity: 'No recent activity to show'
+  },
   templates: {
     title: 'Templates',
     new: 'New Template',
@@ -73,6 +81,7 @@ export const en = {
     }
   },
   company: {
+    title: 'Company Profile',
     basicInfo: 'Basic Information',
     basicInfoHelp: 'This information will appear on your invoices and offers.',
     contactInfo: 'Contact Information',
