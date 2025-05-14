@@ -61,18 +61,19 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 - ✅ Implemented customer deletion with confirmation
 - ✅ Added preferred language selection for customers
 
-## 🚧 Remaining Development Work
-
 ### Document Management - Offers
-- [ ] Create offers listing page
+- ✅ Created offers listing page
+- ✅ Created offer API endpoints (CRUD operations)
+- ✅ Added offer-to-invoice conversion API endpoint
+- ✅ Created PDF generation API for offers
+- ✅ Implemented offer sending via email API
 - [ ] Implement offer detail view
 - [ ] Build offer creation form with line items
 - [ ] Add offer editing functionality
-- [ ] Create offer API endpoints
 - [ ] Implement offer status management
 - [ ] Add offer-to-invoice conversion UI
-- [ ] Create PDF generation for offers
-- [ ] Implement offer sending via email
+
+## 🚧 Remaining Development Work
 
 ### Document Management - Invoices
 - [ ] Create invoices listing page
@@ -165,6 +166,7 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 
 ### Milestone 2: Basic Functionality (IN PROGRESS)
 - ✅ Customer management
+- 🚧 Document management (offers)
 - Simple document creation
 - Template management
 - Settings configuration
