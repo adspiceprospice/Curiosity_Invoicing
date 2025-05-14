@@ -52,16 +52,16 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 - ✅ Created AI chat endpoint
 - ✅ Implemented function calling endpoint for advanced workflows
 
-## 🚧 Remaining Development Work
-
 ### Customer Management
-- [ ] Create customer listing page
-- [ ] Implement customer detail view
-- [ ] Build customer creation form
-- [ ] Add customer editing functionality
-- [ ] Create customer API endpoints
-- [ ] Implement customer deletion with confirmation
-- [ ] Add preferred language selection for customers
+- ✅ Created customer listing page
+- ✅ Implemented customer detail view
+- ✅ Built customer creation form
+- ✅ Added customer editing functionality
+- ✅ Created customer API endpoints (CRUD operations)
+- ✅ Implemented customer deletion with confirmation
+- ✅ Added preferred language selection for customers
+
+## 🚧 Remaining Development Work
 
 ### Document Management - Offers
 - [ ] Create offers listing page
@@ -163,8 +163,8 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 - Integration utilities
 - Dashboard UI
 
-### Milestone 2: Basic Functionality
-- Customer management
+### Milestone 2: Basic Functionality (IN PROGRESS)
+- ✅ Customer management
 - Simple document creation
 - Template management
 - Settings configuration
