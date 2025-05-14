@@ -80,6 +80,26 @@ export const en = {
       inUse: 'Cannot delete template that is being used by documents'
     }
   },
+  translations: {
+    title: 'Translations',
+    description: 'Manage document text in different languages',
+    addressSection: 'Address Translations',
+    addressSectionHelp: 'Translate your company address for use in international documents',
+    paymentTermsSection: 'Payment Terms',
+    paymentTermsSectionHelp: 'Customize payment terms text for each language',
+    paymentTermsText: 'Payment Terms Text',
+    paymentTermsPlaceholder: 'e.g., "Payment within 30 days of receipt"',
+    invoiceFooterSection: 'Invoice Footer',
+    invoiceFooterSectionHelp: 'Customize the text that appears at the bottom of invoices',
+    invoiceFooterText: 'Invoice Footer Text',
+    invoiceFooterPlaceholder: 'e.g., "Thank you for your business"',
+    offerFooterSection: 'Offer Footer',
+    offerFooterSectionHelp: 'Customize the text that appears at the bottom of offers',
+    offerFooterText: 'Offer Footer Text',
+    offerFooterPlaceholder: 'e.g., "This offer is valid for 30 days"',
+    saveSuccess: 'Translations saved successfully',
+    saveError: 'Error saving translations'
+  },
   company: {
     title: 'Company Profile',
     basicInfo: 'Basic Information',
