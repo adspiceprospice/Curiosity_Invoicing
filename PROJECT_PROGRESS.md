@@ -74,18 +74,18 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 - ✅ Implemented offer status management UI
 - ✅ Added offer-to-invoice conversion UI
 
-## 🚧 Remaining Development Work
-
 ### Document Management - Invoices
-- [ ] Create invoices listing page
-- [ ] Implement invoice detail view
-- [ ] Build invoice creation form with line items
-- [ ] Add invoice editing functionality
-- [ ] Create invoice API endpoints
-- [ ] Implement invoice status management
-- [ ] Create PDF generation for invoices
-- [ ] Implement invoice sending via email
-- [ ] Add payment tracking functionality
+- ✅ Created invoices listing page
+- ✅ Implemented invoice detail view
+- ✅ Built invoice creation form with line items
+- ✅ Added invoice editing functionality
+- ✅ Created invoice API endpoints (CRUD operations)
+- ✅ Implemented invoice status management
+- ✅ Created PDF generation for invoices
+- ✅ Implemented invoice sending via email
+- ✅ Added payment tracking functionality with simple "Mark as Paid" and "Mark as Partially Paid" buttons
+
+## 🚧 Remaining Development Work
 
 ### Template Management
 - [ ] Create template listing page
@@ -168,9 +168,9 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 ### Milestone 2: Basic Functionality (IN PROGRESS)
 - ✅ Customer management
 - ✅ Document management (offers)
-- 🚧 Document management (invoices)
-- Template management
-- Settings configuration
+- ✅ Document management (invoices)
+- 🚧 Template management
+- 🚧 Settings configuration
 
 ### Milestone 3: Advanced Features
 - PDF generation
