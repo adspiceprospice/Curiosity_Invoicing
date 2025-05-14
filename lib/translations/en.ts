@@ -2,6 +2,7 @@ export const en = {
   common: {
     cancel: 'Cancel',
     save: 'Save',
+    saving: 'Saving...',
     create: 'Create',
     edit: 'Edit',
     delete: 'Delete',
@@ -71,6 +72,40 @@ export const en = {
       inUse: 'Cannot delete template that is being used by documents'
     }
   },
+  company: {
+    basicInfo: 'Basic Information',
+    basicInfoHelp: 'This information will appear on your invoices and offers.',
+    contactInfo: 'Contact Information',
+    contactInfoHelp: 'Contact details that will be shown on your invoices and offers.',
+    bankInfo: 'Banking Information',
+    bankInfoHelp: 'Payment details that will be shown on your invoices.',
+    branding: 'Branding',
+    brandingHelp: 'Customize the appearance of your documents.',
+    description: 'Manage your company information to be used on invoices and offers.',
+    name: 'Company Name',
+    addressLine1: 'Address Line 1',
+    addressLine2: 'Address Line 2',
+    city: 'City',
+    postalCode: 'Postal Code',
+    country: 'Country',
+    vatId: 'VAT ID / Tax Number',
+    phoneNumber: 'Phone Number',
+    email: 'Email',
+    website: 'Website',
+    bankAccountName: 'Bank Account Name',
+    bankAccountNumber: 'Bank Account Number / IBAN',
+    bankAccountBIC: 'BIC / SWIFT',
+    logoUrl: 'Logo URL',
+    logoUrlHelp: 'Enter a direct URL to your logo image (ideally a PNG or SVG with transparent background).',
+    logoPreview: 'Logo Preview',
+    success: {
+      profileUpdated: 'Company profile updated successfully'
+    },
+    errors: {
+      nameRequired: 'Company name is required',
+      updateFailed: 'Failed to update company profile'
+    }
+  },
   invoices: {
     title: 'Invoices',
     new: 'New Invoice',
@@ -111,10 +146,15 @@ export const en = {
   },
   settings: {
     title: 'Settings',
+    description: 'Manage your account and application settings.',
     companyProfile: 'Company Profile',
+    companyProfileDescription: 'Manage your company information, address, and branding.',
     userProfile: 'User Profile',
-    billing: 'Billing',
+    userProfileDescription: 'Update your personal information and account preferences.',
     integrations: 'Integrations',
-    translations: 'Translations'
+    integrationsDescription: 'Configure integrations with Google Drive, Resend, and other services.',
+    translations: 'Translations',
+    translationsDescription: 'Manage translations and multilingual content for your documents.',
+    billing: 'Billing'
   }
 };
