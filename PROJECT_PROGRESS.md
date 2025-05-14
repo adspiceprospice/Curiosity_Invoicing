@@ -67,11 +67,12 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 - ✅ Added offer-to-invoice conversion API endpoint
 - ✅ Created PDF generation API for offers
 - ✅ Implemented offer sending via email API
-- [ ] Implement offer detail view
-- [ ] Build offer creation form with line items
-- [ ] Add offer editing functionality
-- [ ] Implement offer status management
-- [ ] Add offer-to-invoice conversion UI
+- ✅ Implemented offer detail view
+- ✅ Built offer creation form with line items
+- ✅ Added offer editing functionality
+- ✅ Created email sending modal for offers
+- ✅ Implemented offer status management UI
+- ✅ Added offer-to-invoice conversion UI
 
 ## 🚧 Remaining Development Work
 
@@ -166,8 +167,8 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 
 ### Milestone 2: Basic Functionality (IN PROGRESS)
 - ✅ Customer management
-- 🚧 Document management (offers)
-- Simple document creation
+- ✅ Document management (offers)
+- 🚧 Document management (invoices)
 - Template management
 - Settings configuration
 
