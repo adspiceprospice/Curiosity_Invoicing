@@ -102,12 +102,15 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 - ✅ Added reusable CompanyProfileCard component
 - ✅ Integrated company profile with dashboard
 
-## 🚧 Remaining Development Work
-
 ### Company Translations
-- [ ] Create UI for managing translations for company content
-- [ ] Build translation editor for multilingual content
-- [ ] Implement language-specific templates
+- ✅ Created company translations API endpoints
+- ✅ Implemented API client functions for company translations
+- ✅ Built company translations form with language tabs
+- ✅ Added support for translating address, payment terms, and footer text
+- ✅ Implemented English and Dutch translations
+- ✅ Created flexible UI that supports adding more languages if needed
+
+## 🚧 Remaining Development Work
 
 ### Integration Settings
 - [ ] Add integration settings page
@@ -190,10 +193,10 @@ This document tracks the progress of the Curiosity Invoicing project, outlining 
 
 ### Milestone 3: Advanced Features (IN PROGRESS)
 - ✅ PDF generation
+- ✅ Company translations
 - 🚧 Email functionality
 - 🚧 Google Drive integration
 - 🚧 AI assistant basic functionality
-- 🚧 Company translations
 
 ### Milestone 4: Polish and Deployment
 - UI/UX improvements
