@@ -98,6 +98,12 @@ export const en = {
     logoUrl: 'Logo URL',
     logoUrlHelp: 'Enter a direct URL to your logo image (ideally a PNG or SVG with transparent background).',
     logoPreview: 'Logo Preview',
+    noProfileTitle: 'No Company Profile',
+    noProfileDescription: 'You need to set up your company profile to create invoices and offers.',
+    setupProfile: 'Set Up Company Profile',
+    address: 'Address',
+    taxInfo: 'Tax Information',
+    logo: 'Company Logo',
     success: {
       profileUpdated: 'Company profile updated successfully'
     },
