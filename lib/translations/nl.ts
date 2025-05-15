@@ -143,5 +143,26 @@ export const nl = {
       maxTokens: 'Max Tokens',
       maxTokensHelp: 'Maximaal aantal tokens om te genereren in antwoorden'
     }
+  },
+  userProfile: {
+    title: 'Gebruikersprofiel',
+    description: 'Beheer uw persoonlijke gegevens en voorkeuren',
+    personalInfo: 'Persoonlijke informatie',
+    personalInfoHelp: 'Werk uw naam en profielfoto bij',
+    accountInfo: 'Accountinformatie',
+    accountInfoHelp: 'Bekijk details over uw account',
+    displayName: 'Weergavenaam',
+    email: 'E-mailadres',
+    profileImage: 'Profielfoto',
+    profileImageHelp: 'Voer een URL in naar uw profielfoto (bij voorkeur vierkant, minimaal 200x200 pixels)',
+    profileImagePreview: 'Profielfoto voorbeeld',
+    accountCreated: 'Account aangemaakt',
+    lastUpdated: 'Laatst bijgewerkt',
+    saveSuccess: 'Gebruikersprofiel succesvol bijgewerkt',
+    saveError: 'Fout bij het bijwerken van gebruikersprofiel',
+    errors: {
+      nameRequired: 'Weergavenaam is verplicht',
+      updateFailed: 'Gebruikersprofiel bijwerken mislukt'
+    }
   }
 };
