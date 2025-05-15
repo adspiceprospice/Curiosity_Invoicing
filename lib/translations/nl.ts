@@ -106,5 +106,42 @@ export const nl = {
     translations: 'Vertalingen',
     translationsDescription: 'Beheer vertalingen en meertalige inhoud voor uw documenten.',
     billing: 'Facturatie'
+  },
+  integrations: {
+    title: 'Integraties',
+    description: 'Configureer integraties met externe diensten',
+    loadError: 'Fout bij het laden van integratie-instellingen',
+    saveSuccess: 'Integratie-instellingen succesvol opgeslagen',
+    saveError: 'Fout bij het opslaan van integratie-instellingen',
+    testError: 'Fout bij het testen van integratie',
+    enable: 'Inschakelen',
+    testConnection: 'Verbinding testen',
+    testing: 'Testen...',
+    googleDrive: {
+      title: 'Google Drive',
+      description: 'Sla uw documenten op in Google Drive voor eenvoudige toegang en delen',
+      baseFolderName: 'Naam hoofdmap',
+      baseFolderNameHelp: 'Naam van de hoofdmap in Google Drive waar documenten worden opgeslagen',
+      useTemplateLanguageFolders: 'Taalspecifieke mappen maken',
+      useTemplateLanguageFoldersHelp: 'Maak aparte mappen voor elk documenttaal (bijv. EN, NL)',
+      fileNamingPattern: 'Bestandsnaampatroon',
+      fileNamingPatternHelp: 'Patroon voor het benoemen van bestanden in Google Drive. Beschikbare variabelen: {type}, {number}, {date}, {customer}'
+    },
+    resend: {
+      title: 'Resend E-mail',
+      description: 'Stuur facturen en offertes naar uw klanten via e-mail',
+      domain: 'Domein',
+      domainHelp: 'Domein gebruikt voor het verzenden van e-mails (moet geverifieerd zijn in Resend)',
+      fromEmail: 'Van e-mail',
+      fromName: 'Van naam'
+    },
+    gemini: {
+      title: 'Google Gemini AI',
+      description: 'Gebruik Google Gemini om uw workflow te verbeteren met AI-assistentie',
+      temperature: 'Temperatuur',
+      temperatureHelp: 'Bepaalt willekeurigheid: lagere waarden zijn meer deterministisch (0-1)',
+      maxTokens: 'Max Tokens',
+      maxTokensHelp: 'Maximaal aantal tokens om te genereren in antwoorden'
+    }
   }
 };
