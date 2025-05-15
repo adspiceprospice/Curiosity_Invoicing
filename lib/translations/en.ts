@@ -191,5 +191,42 @@ export const en = {
     translations: 'Translations',
     translationsDescription: 'Manage translations and multilingual content for your documents.',
     billing: 'Billing'
+  },
+  integrations: {
+    title: 'Integrations',
+    description: 'Configure integrations with external services',
+    loadError: 'Error loading integration settings',
+    saveSuccess: 'Integration settings saved successfully',
+    saveError: 'Error saving integration settings',
+    testError: 'Error testing integration',
+    enable: 'Enable',
+    testConnection: 'Test Connection',
+    testing: 'Testing...',
+    googleDrive: {
+      title: 'Google Drive',
+      description: 'Store your documents in Google Drive for easy access and sharing',
+      baseFolderName: 'Base Folder Name',
+      baseFolderNameHelp: 'Name of the root folder in Google Drive where documents will be stored',
+      useTemplateLanguageFolders: 'Create language-specific folders',
+      useTemplateLanguageFoldersHelp: 'Create separate folders for each document language (e.g., EN, NL)',
+      fileNamingPattern: 'File Naming Pattern',
+      fileNamingPatternHelp: 'Pattern for naming files in Google Drive. Available variables: {type}, {number}, {date}, {customer}'
+    },
+    resend: {
+      title: 'Resend Email',
+      description: 'Send invoices and offers to your customers via email',
+      domain: 'Domain',
+      domainHelp: 'Domain used for sending emails (must be verified in Resend)',
+      fromEmail: 'From Email',
+      fromName: 'From Name'
+    },
+    gemini: {
+      title: 'Google Gemini AI',
+      description: 'Use Google Gemini to enhance your workflow with AI assistance',
+      temperature: 'Temperature',
+      temperatureHelp: 'Controls randomness: lower values are more deterministic (0-1)',
+      maxTokens: 'Max Tokens',
+      maxTokensHelp: 'Maximum number of tokens to generate in responses'
+    }
   }
 };
