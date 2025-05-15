@@ -228,5 +228,26 @@ export const en = {
       maxTokens: 'Max Tokens',
       maxTokensHelp: 'Maximum number of tokens to generate in responses'
     }
+  },
+  userProfile: {
+    title: 'User Profile',
+    description: 'Manage your personal information and preferences',
+    personalInfo: 'Personal Information',
+    personalInfoHelp: 'Update your name and profile picture',
+    accountInfo: 'Account Information',
+    accountInfoHelp: 'View details about your account',
+    displayName: 'Display Name',
+    email: 'Email Address',
+    profileImage: 'Profile Image',
+    profileImageHelp: 'Enter a URL to your profile image (ideally square, at least 200x200 pixels)',
+    profileImagePreview: 'Profile Image Preview',
+    accountCreated: 'Account Created',
+    lastUpdated: 'Last Updated',
+    saveSuccess: 'User profile updated successfully',
+    saveError: 'Error updating user profile',
+    errors: {
+      nameRequired: 'Display name is required',
+      updateFailed: 'Failed to update user profile'
+    }
   }
 };
