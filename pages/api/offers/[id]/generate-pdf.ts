@@ -2,8 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { getSession } from 'next-auth/react';
 import { prisma } from '@/lib/prisma';
 import { generatePDF } from '@/lib/pdfGenerator';
-import { uploadToGoogleDrive } from '@/lib/googleDrive';
-import { DocumentStatus } from '@prisma/client';
+import { uploadDocumentToDrive } from '@/lib/document-upload';
 
 export default async function handler(
   req: NextApiRequest,
@@ -97,30 +96,33 @@ export default async function handler(
     // Generate the PDF
     const pdfBuffer = await generatePDF(fullOffer);
 
-    // Create a folder structure in Google Drive
-    // Format: [App Name]/Offers/[Year]/[LanguageCode]/
-    const year = new Date(fullOffer.issueDate).getFullYear();
-    const folderPath = `Curiosity Invoicing/Offers/${year}/${fullOffer.languageCode}`;
+    // Store the PDF URL for local storage (could be a file system or database)
+    let pdfUrl = `/api/offers/${id}/pdf`; // Default URL for local access
     
-    // Upload to Google Drive
-    const uploadResult = await uploadToGoogleDrive({
-      buffer: pdfBuffer,
-      fileName: `${fullOffer.documentNumber}.pdf`,
-      folderPath,
-      mimeType: 'application/pdf',
-    });
+    try {
+      // Try to upload to Google Drive if integration is enabled
+      const driveResult = await uploadDocumentToDrive(req, id as string, pdfBuffer, 'offer');
+      
+      // If successfully uploaded to Google Drive, use the Drive link
+      if (driveResult) {
+        pdfUrl = driveResult.link;
+      }
+    } catch (driveError) {
+      // Log the error but don't fail the entire operation
+      console.error('Error uploading to Google Drive:', driveError);
+      // Continue with local PDF storage
+    }
 
-    // Update the offer with the PDF URL and Google Drive ID
+    // Update the offer with the PDF URL (either Google Drive or local)
     const updatedOffer = await prisma.document.update({
       where: { id },
       data: {
-        pdfUrl: uploadResult.webViewLink,
-        pdfGoogleDriveId: uploadResult.id,
+        pdfUrl,
       },
     });
 
     return res.status(200).json({
-      message: 'PDF generated and uploaded successfully',
+      message: 'PDF generated successfully',
       pdfUrl: updatedOffer.pdfUrl,
       pdfGoogleDriveId: updatedOffer.pdfGoogleDriveId,
     });
